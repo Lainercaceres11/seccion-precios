@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Sección de precios</title>
+</head>
+
+<body>
+
+    <header>
+        <span class="precio_text">Precios</span>
+        <h1 class="title">Desbloque tu creatividad. <br>
+            ¡Prueba el plan Pro gratis!
+        </h1>
+        <span class="text_second">Comienza tu prueba gratuita con acceso a todo <br> el contenido de manera gratuita por
+            7 dias</span><br><br>
+        <div class="switch_container">
+            <span class="porcentaje_precio"> Mensual </span>
+            <input type="checkbox" id="switch" (click)="cambiarPrecio()">
+            <label for="switch" class="lbl"></label>
+            <span class="porcentaje_precio"> Anualmente(-40%) </span>
+        </div>
+    </header>
+    <br> <br>
+
+    <!-- Seccion card -->
+    <section class="card">
+        <div class="card_container">
+            <div class="card_content">
+                <h3>Basico</h3>
+                <span class="card_text">Plan individual</span>
+                <p class="card_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span class="num_precio">${{precioBasico}}</span>
+                <span style="color: white">usd/</span>
+                <span class="mensual">mensual</span><br><br>
+                <span class="pregunta">¿Que esta incluido?</span>
+                <ul class="listas">
+                    <li class="list"> <img src="./assets/icon/check.png" class="icon"> Acceso de por vida los cursos que
+                        completes</li>
+                    <li class="list"> <img src="./assets/icon/check.png" class="icon"> Acceso a todos los cursos</li>
+                    <li> <img src="./assets/icon/check.png" class="icon"> Acceso a todos los proyectos</li>
+                    <li> <img src="./assets/icon/check.png" class="icon"> Aceeso a discord</li>
+                </ul>
+
+                <div class="btn-container"><button class="boton">Empezar</button></div>
+
+            </div>
+        </div> <br>
+
+        <div class="card_container-pro">
+            <div class="card_content">
+                <h3 class="title_pro">Pro</h3>
+                <span class="card_text">Plan individual</span>
+                <p class="card_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span style="color: #0e172c; font-weight: bold; font-size: 32px;">${{precioPro}}</span>usd/<span
+                    class="mensual_pro">mensual</span><br><br>
+                <span class="pregunta_pro">¿Que esta incluido?</span>
+                <ul class="listas">
+                    <li class="list"> <img src="./assets/icon/check.png" class="icon"> Acceso de por vida los cursos que
+                        completes</li>
+                    <li class="li_pro"> <img src="./assets/icon/check.png" class="icon"> Acceso a todos los cursos</li>
+                    <li class="li_pro"> <img src="./assets/icon/check.png" class="icon"> Acceso a todos los proyectos
+                    </li>
+                    <li class="li_pro"> <img src="./assets/icon/check.png" class="icon"> Aceeso a discord</li>
+                </ul>
+                <div class="btn-container_pro"><button class="boton-pro">Empezar</button></div>
+
+            </div>
+        </div> <br>
+
+        <div class="card_container">
+            <div class="card_content">
+                <h3>Empresas</h3>
+                <span class="card_text">Plan para 5 miembros</span>
+                <p class="card_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <span class="num_precio">${{precioEmpresas}}</span>
+                <span style="color: white">usd/</span>
+                <span class="mensual">mensual</span><br> <br>
+                <span class="pregunta">¿Que esta incluido?</span>
+                <ul class="listas">
+                    <li> <img src="./assets/icon/check.png" class="icon"> Acceso de por vida los cursos que completes
+                    </li>
+                    <li> <img src="./assets/icon/check.png" class="icon"> Acceso a todos los cursos</li>
+                    <li> <img src="./assets/icon/check.png" class="icon"> Acceso a todos los proyectos</li>
+                    <li> <img src="./assets/icon/check.png" class="icon"> Aceeso a discord</li>
+                </ul>
+
+                <div class="btn-container"><button class="boton">Empezar</button></div>
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+</body>
+
+</html>
+
+

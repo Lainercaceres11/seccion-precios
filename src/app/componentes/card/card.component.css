@@ -1,0 +1,230 @@
+/*Estilos header*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.precio_text{
+    color: var(--purple-dark);
+}
+
+.title{
+    font-size: 30px;
+}
+@media screen and (max-width: 320px) {
+    .title {
+      text-align: center;
+    }
+  }
+
+  .text_second{
+      color: var(--bg);
+      text-align: center;
+  }
+
+  .porcentaje_precio{
+      color: var(--white);
+      padding-top: 20px;
+  }
+
+/*Fin estilos header*/
+
+/*Inicio de estilos card*/
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+} 
+
+
+@media screen and (max-width: 320px) {
+    .card {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .card {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .title{
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .card {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+   .card{
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+  }
+
+.card_container{
+    width: 250px;
+    height: 500px;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 15px;
+}
+
+.card_text{
+    color: var(--bg);
+    font-size: 17px;
+}
+
+.mensual{
+    color: grey;
+}
+
+.num_precio{
+    color: var(--white);
+    font-size: 30px;
+}
+
+.pregunta{
+    color: var(--white);
+    padding-top: 15px;
+}
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 13px;
+    color: white;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.boton{
+    background-color: var(--purple-dark);
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.list{
+    color: var(--bg);
+}
+
+.listas{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 35px;
+}
+
+/*-------------PRO--------------*/
+.card_container-pro{
+    width: 250px;
+    height: 500px;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple-ligth);
+}
+
+.btn-container_pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.boton-pro{
+    background-color: var(--blue-dark);
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.card_text_pro{
+    color: var(--blue-dark);
+}
+
+.mensual_pro{
+    color: var(--blue-dark);
+}
+
+.li_pro{
+    color: var(--blue-dark);
+}
+
+.title_pro{
+    color: var(--blue-dark);
+}
+
+.preguntas_pro{
+    color: var(--blue-dark);
+}
+
+/*Estilos checkbox*/
+
+.lbl{
+    display: inline-block;
+    width: 45px;
+    height: 23px;
+    background-color: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+    top: 5px;
+}
+
+.lbl::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 100px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    transition: .2s;
+}
+
+#switch:checked + .lbl::after{
+    left: 26px;
+}
+
+#switch:checked + .lbl{
+    background-color: rgb(72, 78, 72);
+}
+
+#switch{
+    display: none;
+
+}
